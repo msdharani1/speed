@@ -1,118 +1,21 @@
-<!doctype html>
-<html lang=en-GB>
-    <head>
-        <meta charset=utf-8>
-        <title>Zpeed - Speedometer online</title>
-        <meta http-equiv=X-UA-Compatible content="IE=edge">
-        <meta name=description content="Check your real-time speed in km/h using GPS without any native app installation">
-        <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=1">
-        <link rel=canonical href="https://zpeed.com/">
-        <link rel=manifest href=manifest.json>
-        <meta name=mobile-web-app-capable content=yes>
-        <meta name=apple-mobile-web-app-capable content=yes>
-        <meta name=application-name content=Zpeed>
-        <meta name=apple-mobile-web-app-status-bar-style content=black>
-        <meta name=apple-mobile-web-app-title content=Zpeed>
-        <link rel=icon sizes=192x192 href=/images/touch/Zpeed_192.png>
-        <link rel=apple-touch-icon href=/images/touch/Zpeed_192.png>
-        <meta name=msapplication-TileImage content=/images/touch/Zpeed_144.png>
-        <meta name=msapplication-TileColor content=#3f51b5>
-        <meta name=theme-color content=#3f51b5>
-        <meta property=og:title content=Zpeed>
-        <meta property=og:type content=website>
-        <meta property=og:image content=https://zpeed.com/images/touch/Zpeed_192.png>
-        <meta property=og:url content="https://zpeed.com/">
-        <meta property=og:description content="Check your real-time speed in km/h. No installation needed. Use it right away!">
-        <meta name=twitter:card content=summary>
-        <meta name=twitter:url content="https://zpeed.com/">
-        <meta name=twitter:title content=Zpeed>
-        <meta name=twitter:description content="Check your real-time speed in km/h. No installation needed. Use it right away!">
-        <meta name=twitter:image content=https://zpeed.com/images/touch/Zpeed_192.png>
-        <meta name=twitter:creator content=@ktAsim>
-        <link rel=stylesheet href=styles/main.css>
-        <script>
-            var ezoicId = 412912;
-        </script>
-        <script async src=//www.ezojs.com/ezoic/sa.min.js></script>
-    </head>
-    <body>
-        <div class=wrapper id=sectionOne>
-            <h1>Zpeed</h1>
-            <p>Check how fast you are travelling online with this speedometer</p>
-            <strong id=speed>...</strong>
-            <p id=unit></p>
-            <div style=display:flex>
-                <button class=button id=ms>Meter/Sec</button>
-                <button class=button id=mh>Miles/Hr</button>
-                <button class=button id=kh>KM/Hr</button>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Speedometer</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Speedometer</h1>
+        <strong id="speed">...</strong>
+        <p id="unit">km/h</p>
+        <div style="display:flex">
+            <button class="button" id="kh">KM/Hr</button>
         </div>
-        <div class=wrapper id=sectionAd>
-            <p>Below ad helps me get some revenue. A simlpe click would help if you're interested.</p>
-            <div id=ezoic-pub-ad-placeholder-101></div>
-            <script>
-                window.ezstandalone = window.ezstandalone || {};
-                ezstandalone.cmd = ezstandalone.cmd || [];
-                ezstandalone.cmd.push(function() {
-                    ezstandalone.define(101);
-                    ezstandalone.enable();
-                    ezstandalone.display();
-                });
-            </script>
-        </div>
-        <div id=ezoic-pub-ad-placeholder-101></div>
-        <div class="wrapper wrapper-small">
-            <div id=installer>
-                <button class=button>Add to Home screen</button>
-                <span class=tooltip></span>
-            </div>
-            <div id=info>
-                <p id=lat>Waiting for GPS...</p>
-                <p id=long>Make sure you are in GPS mode in location settings.</p>
-                <p id=error>Make sure you gave permissions to this website and the browser.</p>
-            </div>
-        </div>
-        <article class="wrapper wrapper-small" id=sectionTwo>
-            <h2>Zpeed - Online Speedometer in your pocket</h2>
-            <p>Zpeed helps you find your real-time speed in km/h. No installation needed. Use it right away! Zpeed is a progressive web app which you can use offline in latest browsers like Google Chrome.</p>
-            <p>
-                If you find Zpeed useful, please <a href="http://twitter.com/home?status=Check how fast is your vehicle going using %23Zpeed. https://zpeed.in">tweet</a>
-                about this.
-            </p>
-            <p>Some browsers and devices have support issues with geoLocation API. If you are not getting correct location, make sure you are in GPS mode in location settings and you gave location permission to both the Browser and Webpage. Or, try with another browser. :)</p>
-        </article>
-        <article class="wrapper wrapper-small" id=sectionThree>
-            <h3>Contact us</h3>
-            <p>
-                Zpeed is in beta state. Please let me know about issues <a href="http://twitter.com/home?status=%23Zpeed @KTAsim">@KTAsim</a>
-                or mail to <a href="mailto:issues@zpeed.in?Subject=Zpeed%20Issue&body=//Please add OS,Browser version and Device as content and remove this comment.%0D%0ADevice:%0D%0AOS with version:%0D%0ABrowser with version%0D%0APlease add a screenshot if you have one. That would be very helpful"target=_top ">issues@zpeed.in</a>.</p><p><a href=www.zpeed.in/privacy-policy.html>Privacy policy</a></p><p></p></article><noscript><style type=text/css>
-            .wrapper {display:none;}
-        </style><div class=noscriptmsg>You don't have JavaScript enabled. Without JS there's not much I can't do!.</div><link href="https://fonts.googleapis.com/css?family=Quicksand:300 " rel=stylesheet></noscript><script src=/scripts/main.min.js></script><script>
-      /* Google font CSS File */
-      var giftofspeed = document.createElement('link');
-      giftofspeed.rel = 'stylesheet';
-      giftofspeed.href = 'https://fonts.googleapis.com/css?family=Quicksand:300';
-      giftofspeed.type = 'text/css';
-      var godefer = document.getElementsByTagName('link')[0];
-      godefer.parentNode.insertBefore(giftofspeed, godefer);
+    </div>
 
-      /* Service worker code */
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js', { scope: '/' })
-          .then(function(registration) {
-                console.log('Service Worker Registered');
-          });
-
-        navigator.serviceWorker.ready.then(function(registration) {
-           console.log('Service Worker Ready');
-        });
-      }
-
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-90407814-1', 'auto');
-      ga('send', 'pageview');
-    </script></body></html>
+    <script src="scripts/main.min.js"></script>
+</body>
+</html>
